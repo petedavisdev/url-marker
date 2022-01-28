@@ -7,7 +7,7 @@
     "content_scripts": [
         {
             "matches": ["*://localhost*/*", "*://local*.**.**/*", "*://qa*.**.**/*", "*://uat*.**.**/*", "*://test*.**.**/*", "*://staging*.**.**/*"],
-            "css": ["environment-labels.css"],
+            "css": ["env-label.css"],
             "js": ["environmentLabels.js"]
         }
     ]
