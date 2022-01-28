@@ -1,2 +1,5 @@
-# environment-labels
-Never get confused between local, test and live environments
+# Environment Labels - browser extension
+Never mix up local, test and live environments
+
+## License
+[GNU GENERAL PUBLIC LICENSE Version 2](/LICENSE)
