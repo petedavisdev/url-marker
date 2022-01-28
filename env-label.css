@@ -1,0 +1,16 @@
+#env-label {
+    --border: solid 2px currentColor;
+
+    font-size: small;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+
+    padding-inline: 1em;
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-bottom-right-radius: 1em;
+    background-color: #222;
+    font-family: monospace;
+}
