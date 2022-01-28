@@ -1,0 +1,14 @@
+{
+    "name": "Environment labels",
+    "description": "Never mix up local, test and live environments",
+    "action": {},
+    "manifest_version": 3,
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": ["*://localhost*/*", "*://local*.**.**/*", "*://qa*.**.**/*", "*://uat*.**.**/*", "*://test*.**.**/*", "*://staging*.**.**/*"],
+            "css": ["environment-labels.css"],
+            "js": ["environmentLabels.js"]
+        }
+    ]
+}
