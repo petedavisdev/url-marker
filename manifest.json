@@ -6,7 +6,7 @@
     "version": "0.1",
     "content_scripts": [
         {
-            "matches": ["*://localhost*/*", "*://local*.**.**/*", "*://qa*.**.**/*", "*://uat*.**.**/*", "*://test*.**.**/*", "*://staging*.**.**/*"],
+            "matches": ["*://localhost*/*", "*://local*.**.**/*", "*://dev*.**.**/*", "*://deploy*.**.**/*", "*://preview*.**.**/*", "*://qa*.**.**/*", "*://uat*.**.**/*", "*://test*.**.**/*", "*://staging*.**.**/*"],
             "css": ["env-label.css"],
             "js": ["environmentLabels.js"]
         }
