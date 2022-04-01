@@ -1,14 +1,13 @@
 {
-    "name": "Environment labels",
-    "description": "Never mix up local, test and live environments",
-    "action": {},
-    "manifest_version": 3,
+    "name": "URL Marker",
     "version": "0.1",
+    "description": "Never mix up local, test and live environments",
     "content_scripts": [
         {
-            "matches": ["*://localhost*/*", "*://local*.**.**/*", "*://dev*.**.**/*", "*://deploy*.**.**/*", "*://preview*.**.**/*", "*://qa*.**.**/*", "*://uat*.**.**/*", "*://test*.**.**/*", "*://staging*.**.**/*"],
-            "css": ["env-label.css"],
-            "js": ["environmentLabels.js"]
+            "matches": ["<all_urls>"],
+            "css": ["url-marker.css"],
+            "js": ["urlMarker.js"]
         }
-    ]
+    ],
+    "manifest_version": 3
 }
