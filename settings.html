@@ -4,20 +4,27 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>URL Marker</title>
+		<!-- <link
+			href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.7.4/jsoneditor.css"
+			rel="stylesheet"
+			type="text/css"
+		/> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.7.4/jsoneditor.min.js"></script> -->
 	</head>
+
 	<body>
 		<h1>URL Marker</h1>
 		<h2>Settings</h2>
 
 		<form id="permissionsForm">
 			<p>Allow URL Marker to access all URLs</p>
-
 			<button id="permissionsButton" type="button">Continue</button>
 		</form>
 
 		<form id="settingsForm">
-			<label for="settingss">Must be valid JSON</label>
+			<label for="settings">Must be valid JSON</label>
 			<textarea id="settings"></textarea>
+			<button id="settingsButton" type="button">Save</button>
 		</form>
 
 		<script src="settings.js"></script>

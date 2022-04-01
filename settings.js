@@ -2,6 +2,7 @@ const permissionsForm = document.getElementById('permissionsForm');
 const permissionsButton = document.getElementById('permissionsButton');
 const settingsForm = document.getElementById('settingsForm');
 const settingsInput = document.getElementById('settings');
+const settingsButton = document.getElementById('settingsButton');
 
 function checkPermissions() {
 	chrome.permissions.contains(
@@ -41,4 +42,14 @@ const defaultSettings = JSON.stringify([
 chrome.storage.sync.get(['settings'], function (result) {
 	// Create marker using either saved or default settings
 	settingsInput.value = result.settings || defaultSettings;
+});
+
+settingsButton.addEventListener('click', () => {
+	try {
+		JSON.parse(settingsInput.value);
+		alert('way to go!');
+		chrome.storage.sync.set({ settings: settingsInput.value });
+	} catch {
+		alert('not valid JSON');
+	}
 });
