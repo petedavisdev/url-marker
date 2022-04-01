@@ -1,4 +1,4 @@
-# Environment Labels - browser extension
+# URL Marker - browser extension
 Never mix up local, test and live environments
 
 ## License
