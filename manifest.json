@@ -1,13 +1,14 @@
 {
-    "name": "URL Marker",
-    "version": "0.1",
-    "description": "Never mix up local, test and live environments",
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "css": ["url-marker.css"],
-            "js": ["urlMarker.js"]
-        }
-    ],
-    "manifest_version": 3
+	"name": "URL Marker",
+	"version": "0.1",
+	"description": "Never mix up local, test and live environments",
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"css": ["url-marker.css"],
+			"js": ["urlMarker.js"]
+		}
+	],
+	"permissions": ["storage"],
+	"manifest_version": 3
 }

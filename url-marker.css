@@ -1,15 +1,12 @@
 #url-marker {
-    --border: solid 2px currentColor;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0.5em;
 
-    position: fixed;
-    z-index: 99999;
-    top: 0;
-    left: 0;
-
-    padding-inline: 1em;
-    border-right: var(--border);
-    border-bottom: var(--border);
-    border-bottom-right-radius: 1em;
-    background-color: #222;
-    font-family: monospace;
+	padding-inline: 0.5em;
+	border: solid 2px currentColor;
+	border-top: none;
+	background-color: #222;
+	font-family: monospace;
 }
