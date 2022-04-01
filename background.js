@@ -1,0 +1,7 @@
+chrome.runtime.onInstalled.addListener((r) => {
+	if (r.reason != 'install') {
+		return;
+	}
+
+	chrome.tabs.create({ url: 'settings.html' });
+});

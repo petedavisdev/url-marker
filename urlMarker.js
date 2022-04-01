@@ -1,5 +1,5 @@
 // Default settings for first-time user
-let defaultSettings = JSON.stringify([
+const defaultSettings = JSON.stringify([
 	{
 		name: 'local',
 		urls: ['localhost:', '://local.'],
@@ -26,7 +26,7 @@ function createMarker(settings) {
 	const el = document.createElement('span');
 
 	// Add element properties
-	el.id = 'url-marker';
+	el.id = 'urlMarker';
 	el.innerHTML = marker.name;
 	el.style = marker.style;
 

@@ -2,13 +2,17 @@
 	"name": "URL Marker",
 	"version": "0.1",
 	"description": "Never mix up local, test and live environments",
+	"manifest_version": 3,
+	"background": {
+		"service_worker": "background.js"
+	},
 	"content_scripts": [
 		{
 			"matches": ["<all_urls>"],
-			"css": ["url-marker.css"],
+			"css": ["urlMarker.css"],
 			"js": ["urlMarker.js"]
 		}
 	],
-	"permissions": ["storage"],
-	"manifest_version": 3
+	"host_permissions": ["<all_urls>"],
+	"permissions": ["storage", "tabs"]
 }
