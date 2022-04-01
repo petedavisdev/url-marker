@@ -1,7 +1,6 @@
-#env-label {
+#url-marker {
     --border: solid 2px currentColor;
 
-    font-size: small;
     position: fixed;
     z-index: 99999;
     top: 0;
