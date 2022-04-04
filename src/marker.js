@@ -1,17 +1,6 @@
-// Default settings for first-time user
-const defaultSettings = JSON.stringify([
-	{
-		name: 'local',
-		urls: ['localhost:', '://local.'],
-		style: 'color: yellow;',
-	},
-]);
+import { useSettings } from './helpers/useSettings';
 
-// Check storage for saved user settings
-chrome.storage.sync.get(['settings'], function (result) {
-	// Create marker using either saved or default settings
-	createMarker(result.settings || defaultSettings);
-});
+useSettings(createMarker);
 
 function createMarker(settings) {
 	// Find marker settings for current url

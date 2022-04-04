@@ -1,0 +1,16 @@
+{
+	"name": "url-marker",
+	"version": "0.1.0",
+	"license": "GNU GENERAL PUBLIC LICENSE Version 2",
+	"browserslist": [
+		"last 2 Chrome versions"
+	],
+	"scripts": {
+		"build": "rollup -c"
+	},
+	"devDependencies": {
+		"rollup": "^2.70.1",
+		"rollup-plugin-copy": "^3.4.0"
+	}
+}
+

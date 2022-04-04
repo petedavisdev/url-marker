@@ -9,8 +9,8 @@
 	"content_scripts": [
 		{
 			"matches": ["<all_urls>"],
-			"css": ["urlMarker.css"],
-			"js": ["urlMarker.js"]
+			"css": ["marker.css"],
+			"js": ["marker.js"]
 		}
 	],
 	"host_permissions": ["<all_urls>"],
