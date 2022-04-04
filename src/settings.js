@@ -4,18 +4,17 @@ import { useSettings } from './helpers/useSettings';
 const permissionsForm = document.getElementById('permissionsForm');
 const permissionsButton = document.getElementById('permissionsButton');
 const settingsForm = document.getElementById('settingsForm');
-const settingsInput = document.getElementById('settings');
 const settingsButton = document.getElementById('settingsButton');
 
 function toggleSettings(hasPermission) {
 	if (hasPermission) {
-		permissionsForm.hidden = true;
-		settingsForm.hidden = false;
+		permissionsForm.classList.add('hidden');
+		settingsForm.classList.remove('hidden');
 		return;
 	}
 
-	permissionsForm.hidden = false;
-	settingsForm.hidden = true;
+	settingsForm.classList.add('hidden');
+	permissionsForm.classList.remove('hidden');
 }
 
 checkPermissions(toggleSettings);
@@ -26,13 +25,19 @@ permissionsButton.addEventListener('click', () =>
 	chrome.permissions.request({ origins: ['<all_urls>'] })
 );
 
-useSettings((settings) => (settingsInput.value = settings));
+const editorContainer = document.getElementById('JSONeditor');
+const settingsEditor = new window.JSONEditor(editorContainer, { mode: 'code' });
+
+useSettings((settings) => settingsEditor.set(JSON.parse(settings)));
 
 settingsButton.addEventListener('click', () => {
 	try {
-		JSON.parse(settingsInput.value);
+		const settingsValue = settingsEditor.get();
+
 		alert('😁 OK! Reload pages to see your changes');
-		chrome.storage.sync.set({ settings: settingsInput.value });
+		chrome.storage.sync.set({
+			settings: JSON.stringify(settingsValue),
+		});
 	} catch {
 		alert('🤬 Not valid JSON! Check your code...');
 	}

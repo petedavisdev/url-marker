@@ -36,6 +36,22 @@ export default [
 				targets: [
 					{ src: 'src/settings.css', dest: 'build' },
 					{ src: 'src/settings.html', dest: 'build' },
+					{
+						src: 'node_modules/jsoneditor/dist/jsoneditor.min.css',
+						dest: 'build',
+					},
+					{
+						src: 'node_modules/jsoneditor/dist/jsoneditor.min.js',
+						dest: 'build',
+					},
+					{
+						src: 'node_modules/jsoneditor/dist/jsoneditor.min.js',
+						dest: 'build',
+					},
+					{
+						src: 'node_modules/jsoneditor/dist/img/jsoneditor-icons.svg',
+						dest: 'build/img',
+					},
 				],
 			}),
 		],

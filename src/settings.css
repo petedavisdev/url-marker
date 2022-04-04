@@ -1,3 +1,67 @@
 body {
+	box-sizing: border-box;
+	margin: 0;
 	font-family: Roboto, Oxygen, Ubuntu, 'Open Sans', sans-serif;
+}
+
+form {
+	height: 100%;
+	margin: 0;
+}
+
+#settingsForm {
+	position: relative;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+}
+
+.settingsInfo {
+	padding: 1em;
+	background-color: #222;
+	color: white;
+}
+
+#showExample ~ #example {
+	display: none;
+}
+
+#showExample:checked ~ #example {
+	display: block;
+}
+
+pre {
+	color: lightgreen;
+	margin-right: 1ch;
+}
+
+button {
+	padding: 0.5em 2em;
+	font-size: x-large;
+	font-weight: bold;
+	background-color: navy;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: darkblue;
+}
+
+#settingsButton {
+	position: fixed;
+	top: 0.5ch;
+	right: 0.5ch;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+.hidden {
+	opacity: 0;
+	position: absolute;
+	top: -200vmax;
+	left: -200vmax;
 }
