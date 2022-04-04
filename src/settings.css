@@ -12,7 +12,7 @@ form {
 #settingsForm {
 	position: relative;
 	display: grid;
-	grid-template-columns: 300px 1fr;
+	grid-template-columns: 360px 1fr;
 }
 
 .settingsInfo {
@@ -36,17 +36,18 @@ pre {
 
 button {
 	padding: 0.5em 2em;
-	font-size: x-large;
+	font-size: large;
 	font-weight: bold;
-	background-color: navy;
+	background-color: forestgreen;
 	color: white;
-	border: none;
-	border-radius: 3px;
+	border: #000c solid 1px;
+	box-shadow: 0 0 0.5em 0 #000c;
+	border-radius: 4px;
 	cursor: pointer;
 }
 
 button:hover {
-	background-color: darkblue;
+	background-color: seagreen;
 }
 
 #settingsButton {
@@ -64,4 +65,11 @@ h1 {
 	position: absolute;
 	top: -200vmax;
 	left: -200vmax;
+}
+.jsoneditor {
+	border: none;
+}
+
+.jsoneditor-menu {
+	background-color: #333;
 }

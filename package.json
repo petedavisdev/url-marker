@@ -6,7 +6,8 @@
 		"last 2 Chrome versions"
 	],
 	"scripts": {
-		"build": "rollup -c"
+		"build": "rollup -c",
+		"dev": "rollup -c -w"
 	},
 	"devDependencies": {
 		"rollup": "^2.70.1",
