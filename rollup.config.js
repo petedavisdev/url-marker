@@ -1,4 +1,5 @@
 import copy from 'rollup-plugin-copy';
+import glob from 'fast-glob';
 
 export default [
 	{
@@ -11,6 +12,13 @@ export default [
 			copy({
 				targets: [{ src: 'src/manifest.json', dest: 'build' }],
 			}),
+			{
+				name: 'watch-src',
+				async buildStart() {
+					const files = await glob('src/**/*.{css,html,json}');
+					files.forEach((file) => this.addWatchFile(file));
+				},
+			},
 		],
 	},
 	{

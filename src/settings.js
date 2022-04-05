@@ -1,10 +1,18 @@
-import { checkPermissions } from './helpers/checkPermissions';
 import { useSettings } from './helpers/useSettings';
 
 const permissionsForm = document.getElementById('permissionsForm');
 const permissionsButton = document.getElementById('permissionsButton');
 const settingsForm = document.getElementById('settingsForm');
 const settingsButton = document.getElementById('settingsButton');
+
+function checkPermissions(action) {
+	chrome.permissions.contains(
+		{
+			origins: ['<all_urls>'],
+		},
+		(result) => action(result)
+	);
+}
 
 function toggleSettings(hasPermission) {
 	if (hasPermission) {
@@ -28,7 +36,7 @@ permissionsButton.addEventListener('click', () =>
 const editorContainer = document.getElementById('JSONeditor');
 const settingsEditor = new window.JSONEditor(editorContainer, { mode: 'code' });
 
-useSettings((settings) => settingsEditor.set(JSON.parse(settings)));
+useSettings((settings) => settingsEditor.set(settings));
 
 settingsButton.addEventListener('click', () => {
 	try {

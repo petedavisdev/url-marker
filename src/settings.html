@@ -16,7 +16,7 @@
 	<body>
 		<form id="permissionsForm" class="settingsInfo">
 			<h1>URL Marker</h1>
-			<h2>Allow URL Marker to access all URLs</h2>
+			<h2>You need to allow access to all URLs in order to add markers</h2>
 			<button id="permissionsButton" type="button">Continue</button>
 		</form>
 
@@ -29,16 +29,17 @@
 				<input type="checkbox" id="showExample" />
 				<label for="showExample"> Show example </label>
 				<pre id="example">
-[
+"style": "font-size: 18px; padding-inline: 1em;",
+"urls": [
   {
     "name": "local",
-    "urls": [ "localhost:", "local.yourdomain.com" ],
-    "style": "color: yellow;"
+    "include": [ "localhost:", "local.yourdomain.com" ],
+    "color": "yellow"
   },
   {
     "name": "test",
-    "urls": [ "test.yourdomain.com" ],
-    "style": "color: #ffcc33; font-size: 2em;"
+    "include": "test.yourdomain.com",
+    "color": "#ffcc33"
   }
 ]</pre
 				>

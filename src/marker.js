@@ -4,10 +4,13 @@ useSettings(createMarker);
 
 function createMarker(settings) {
 	// Find marker settings for current url
-	const marker = JSON.parse(settings).find((item) =>
+	const marker = settings?.urls.find((item) => {
+		const url = window.location.href;
 		// True if some url is included in the current url
-		item.urls.some((url) => window.location.href.includes(url))
-	);
+		if (!Array.isArray(item?.include)) return url.includes(item.include);
+
+		return item?.include.some((string) => url.includes(string));
+	});
 
 	if (!marker) return;
 
@@ -17,7 +20,8 @@ function createMarker(settings) {
 	// Add element properties
 	el.id = 'urlMarker';
 	el.innerHTML = marker.name;
-	el.style = marker.style;
+	el.style = settings?.style;
+	el.style.color = marker.color;
 
 	// Add marker to page
 	document.body.appendChild(el);
