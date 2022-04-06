@@ -4,7 +4,7 @@ useSettings(createMarker);
 
 function createMarker(settings) {
 	// Find marker settings for current url
-	const marker = settings?.urls.find((item) => {
+	const marker = settings?.markers.find((item) => {
 		const url = window.location.href;
 		// True if some url is included in the current url
 		if (!Array.isArray(item?.include)) return url.includes(item.include);

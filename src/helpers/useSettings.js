@@ -1,7 +1,7 @@
 // Default settings for first-time user
 const defaultSettings = {
 	style: 'font-size: 18px; font-family: monospace;',
-	urls: [
+	markers: [
 		{
 			name: 'local',
 			include: ['localhost:', '://local.'],

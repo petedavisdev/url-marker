@@ -3,7 +3,8 @@
 	z-index: 99999;
 	top: 0;
 	left: 0.5em;
-	padding-inline: 0.5em;
+	line-height: 1;
+	padding: 0.2em 0.5em;
 	border: solid 2px currentColor;
 	border-top: none;
 	background-color: #222;
