@@ -45,7 +45,6 @@ export default [
 		plugins: [
 			copy({
 				targets: [
-					{ src: 'src/popup.html', dest: 'build' },
 					{ src: 'src/settings.css', dest: 'build' },
 					{ src: 'src/settings.html', dest: 'build' },
 					{

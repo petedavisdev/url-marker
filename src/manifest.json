@@ -14,7 +14,7 @@
 			"16": "url-marker-icon-16.png",
 			"32": "url-marker-icon-16.png"
 		},
-		"default_popup": "popup.html"
+		"default_title": "URL Marker Settings"
 	},
 	"background": {
 		"service_worker": "background.js"

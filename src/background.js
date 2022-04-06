@@ -3,3 +3,7 @@ chrome.runtime.onInstalled.addListener((r) => {
 
 	chrome.tabs.create({ url: 'settings.html' });
 });
+
+chrome.action.onClicked.addListener(function () {
+	chrome.tabs.create({ url: 'settings.html' });
+});
