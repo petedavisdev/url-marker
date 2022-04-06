@@ -3,6 +3,19 @@
 	"version": "0.1",
 	"description": "Never mix up local, test and live environments",
 	"manifest_version": 3,
+	"icons": {
+		"16": "url-marker-icon-16.png",
+		"32": "url-marker-icon-32.png",
+		"48": "url-marker-icon-48.png",
+		"128": "url-marker-icon-128.png"
+	},
+	"action": {
+		"default_icon": {
+			"16": "url-marker-icon-16.png",
+			"32": "url-marker-icon-16.png"
+		},
+		"default_popup": "popup.html"
+	},
 	"background": {
 		"service_worker": "background.js"
 	},

@@ -1,6 +1,6 @@
 // Default settings for first-time user
 const defaultSettings = {
-	style: 'font-size: 18px;',
+	style: 'font-size: 18px; font-family: monospace;',
 	urls: [
 		{
 			name: 'local',

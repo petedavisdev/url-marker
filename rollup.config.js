@@ -10,7 +10,10 @@ export default [
 		},
 		plugins: [
 			copy({
-				targets: [{ src: 'src/manifest.json', dest: 'build' }],
+				targets: [
+					{ src: 'src/manifest.json', dest: 'build' },
+					{ src: 'src/icons/*.png', dest: 'build' },
+				],
 			}),
 			{
 				name: 'watch-src',
@@ -42,6 +45,7 @@ export default [
 		plugins: [
 			copy({
 				targets: [
+					{ src: 'src/popup.html', dest: 'build' },
 					{ src: 'src/settings.css', dest: 'build' },
 					{ src: 'src/settings.html', dest: 'build' },
 					{

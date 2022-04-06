@@ -3,10 +3,9 @@
 	z-index: 99999;
 	top: 0;
 	left: 0.5em;
-
 	padding-inline: 0.5em;
 	border: solid 2px currentColor;
 	border-top: none;
+	color: gold;
 	background-color: #222;
-	font-family: monospace;
 }
