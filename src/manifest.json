@@ -1,7 +1,7 @@
 {
 	"name": "URL Marker",
-	"version": "0.1",
-	"description": "Never mix up local, test and live environments",
+	"version": "0.1.0",
+	"description": "Never mix up local, test and live environments again! Markers show on pages and tabs. Share your settings with your team.",
 	"manifest_version": 3,
 	"icons": {
 		"16": "url-marker-icon-16.png",
