@@ -15,15 +15,17 @@
 
 	<body>
 		<form id="permissionsForm" class="settingsInfo">
-			<h1>URL Marker</h1>
+			<h1><img src="url-marker-icon-48.png" alt="URL Marker" /></h1>
 			<h2>You need to allow access to all URLs in order to add markers</h2>
 			<button id="permissionsButton" type="button">Continue</button>
 		</form>
 
 		<form id="settingsForm">
 			<section class="settingsInfo">
-				<h1>URL Marker</h1>
-				<h2>Settings</h2>
+				<h1>
+					<img src="url-marker-icon-48.png" alt="URL Marker" />
+					Settings
+				</h1>
 				<p>Must be the correct JSON format</p>
 
 				<input type="checkbox" id="showExample" />
@@ -33,8 +35,7 @@
 "urls": [
   {
     "name": "local",
-    "include": [ "localhost:", "local.yourdomain.com" ],
-    "color": "yellow"
+    "include": [ "localhost:", "local.yourdomain.com" ]
   },
   {
     "name": "test",

@@ -19,9 +19,9 @@ function createMarker(settings) {
 
 	// Add element properties
 	el.id = 'urlMarker';
-	el.innerHTML = marker.name;
-	el.style = settings?.style;
-	el.style.color = marker.color;
+	el.innerHTML = marker.name || 'no name';
+	el.style = settings.style || '';
+	el.style.color = marker.color || 'gold';
 
 	// Add marker to page
 	document.body.appendChild(el);
