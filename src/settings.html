@@ -15,27 +15,33 @@
 
 	<body>
 		<form id="permissionsForm" class="settingsInfo">
-			<h1><img src="url-marker-icon-48.png" alt="URL Marker" /></h1>
-			<h2>You need to allow access to all URLs in order to add markers</h2>
-			<button id="permissionsButton" type="button">Continue</button>
+			<section>
+				<h1><img src="url-marker-icon-48.png" alt="URL Marker" /></h1>
+				<h2>You need to allow access to all URLs in order to add markers</h2>
+				<button id="permissionsButton" type="button">Continue</button>
+			</section>
 		</form>
 
 		<form id="settingsForm">
 			<section class="settingsInfo">
-				<h1>
-					<img src="url-marker-icon-48.png" alt="URL Marker" />
-					Settings
-				</h1>
-				<p>Must be the correct JSON format</p>
+				<div>
+					<h1>
+						<img src="url-marker-icon-48.png" alt="URL Marker" />
+						Settings
+					</h1>
+					<p>Must be the correct JSON format</p>
 
-				<input type="checkbox" id="showExample" />
-				<label for="showExample"> Show example </label>
-				<pre id="example">
-"style": "font-size: 18px; padding-inline: 1em;",
+					<input type="checkbox" id="showExample" />
+					<label for="showExample"> Show example </label>
+					<pre id="example">
+"style": "font-size: 16px; padding: 8px;",
 "markers": [
   {
     "name": "local",
-    "include": [ "localhost:", "local.yourdomain.com" ]
+    "include": [
+      "localhost:",
+      "local.yourdomain.com"
+    ]
   },
   {
     "name": "test",
@@ -43,7 +49,30 @@
     "color": "#ffcc33"
   }
 ]</pre
-				>
+					>
+				</div>
+
+				<aside>
+					<p>
+						Like this extension?
+						<a href="https://www.buymeacoffee.com/petedavis">
+							Buy me a coffee ☕😉
+						</a>
+					</p>
+					<p>
+						Think it could be better?
+						<a href="https://github.com/petedavisdev/url-marker/issues">
+							Let me know 🐞🤗
+						</a>
+					</p>
+					<p>Thank you!</p>
+					<p>
+						— Pete Davis,
+						<a href="https://github.com/petedavisdev">
+							github.com/petedavisdev
+						</a>
+					</p>
+				</aside>
 			</section>
 
 			<section>

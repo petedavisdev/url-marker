@@ -2,6 +2,7 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	font-family: Roboto, Oxygen, Ubuntu, 'Open Sans', sans-serif;
+	font-size: 16px;
 }
 
 form {
@@ -12,13 +13,21 @@ form {
 #settingsForm {
 	position: relative;
 	display: grid;
-	grid-template-columns: 360px 1fr;
+	grid-template-columns: 400px 1fr;
 }
 
 .settingsInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	padding: 1em;
 	background-color: #222;
 	color: white;
+}
+
+.settingsInfo a {
+	color: dodgerblue;
+	text-decoration: none;
 }
 
 #showExample ~ #example {
@@ -72,4 +81,9 @@ h1 {
 
 .jsoneditor-menu {
 	background-color: #333;
+}
+
+aside {
+	color: silver;
+	border-top: solid 1px #444;
 }
