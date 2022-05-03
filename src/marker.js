@@ -14,7 +14,10 @@ function createMarker(settings) {
 
 	if (!marker) return;
 
-	// Create marker element
+	// Add marker name to title displayed in browser tab
+	document.title = marker.name + ' — ' + document.title;
+
+	// Create the marker element
 	const el = document.createElement('span');
 
 	// Add element properties
@@ -23,9 +26,33 @@ function createMarker(settings) {
 	el.style = settings.style || '';
 	el.style.color = marker.color || 'gold';
 
-	// Add marker to page
+	// Add the marker to the page
 	document.body.appendChild(el);
 
-	// Add marker name to title displayed in browser tab
-	document.title = marker.name + ' — ' + document.title;
+	// Dragging -  initial states
+	let dragging = false;
+	let mouseX = 0;
+	let elX = 0;
+
+	// Set drag states on mousedown
+	el.addEventListener('mousedown', (e) => {
+		const elTransform = getComputedStyle(el).getPropertyValue('transform');
+		const elTransformArray = elTransform.replace(/[^0-9\-.,]/g, '').split(',');
+
+		elX = parseFloat(elTransformArray[12] || elTransformArray[4] || 0);
+		mouseX = e.screenX;
+		dragging = true;
+	});
+
+	// Update transform: translate()
+	document.addEventListener('mousemove', (e) => {
+		if (dragging) {
+			el.style.transform = `translateX(${e.screenX + elX - mouseX}px)`;
+		}
+	});
+
+	// Cancel dragging on mouseup
+	document.addEventListener('mouseup', () => {
+		dragging = false;
+	});
 }
