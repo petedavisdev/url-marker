@@ -19,7 +19,7 @@ function createMarker(settings) {
 
 	// Add element properties
 	el.id = 'urlMarker';
-	el.innerHTML = marker.name || 'no name';
+	el.innerHTML = '⋮⋮ ' + (marker.name || 'no name');
 	el.style = settings.style || '';
 	el.style.color = marker.color || 'gold';
 
