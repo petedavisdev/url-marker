@@ -8,4 +8,6 @@
 	border: solid 2px currentColor;
 	border-top: none;
 	background-color: #222;
+	cursor: move;
+	user-select: none;
 }
