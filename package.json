@@ -1,6 +1,6 @@
 {
 	"name": "url-marker",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"license": "GNU GENERAL PUBLIC LICENSE Version 2",
 	"browserslist": [
 		"last 2 Chrome versions"
