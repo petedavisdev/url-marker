@@ -1,0 +1,10 @@
+URL Marker is an essential extension for developers, testers and content editors working with multiple versions of a website.
+
+- Markers are shown at the top of the page
+- Marker names are also shown in tabs to help with multitasking
+- Drag the marker if it ever gets in the way
+- Style your markers any way you like
+- Comes preset with common environment names
+- You can set up markers for full or partial URLs
+- Choose a unique name and color for each url
+- Share your settings with your team
