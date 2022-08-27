@@ -1,6 +1,8 @@
-# URL Marker - browser extension
+# URL Marker<sup> BETA</sup> - browser extension
 
-Never mix up local, test and live environments
+Never mix up local, test and live environments again!
+
+**[Get it in the chrome web store](https://chrome.google.com/webstore/detail/url-marker/ebpaibilachiamhpjjdjaaingpamifaf)**
 
 ## License
 
