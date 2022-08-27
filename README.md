@@ -4,6 +4,8 @@ Never mix up local, test and live environments again!
 
 **[Get it in the chrome web store](https://chrome.google.com/webstore/detail/url-marker/ebpaibilachiamhpjjdjaaingpamifaf)**
 
+![url marker demo](https://github.com/petedavisdev/url-marker/blob/main/docs/ScreenshotLocal.png?raw=true)
+
 ## License
 
 [GNU GENERAL PUBLIC LICENSE Version 2](/LICENSE)
