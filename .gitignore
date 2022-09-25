@@ -17,3 +17,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# OSX
+.DS_Store
