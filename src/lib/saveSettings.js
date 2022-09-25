@@ -1,7 +1,6 @@
 export function saveSettings(settingsEditor) {
-	const saveButton = document.getElementById('saveButton');
-
-	saveButton.addEventListener('click', () => {
+	function save() {
+		console.log('saving');
 		try {
 			const settingsValue = settingsEditor.get();
 
@@ -12,6 +11,23 @@ export function saveSettings(settingsEditor) {
 		} catch {
 			alert('🤬 Not valid JSON! Check your code...');
 		}
-	});
+	}
+
+	const saveButton = document.getElementById('saveButton');
+	saveButton.addEventListener('click', () => save());
+
+	document.addEventListener(
+		'keydown',
+		(e) => {
+			if (
+				(window.navigator.platform.match('Mac') ? e.metaKey : e.ctrlKey) &&
+				e.key === 's'
+			) {
+				e.preventDefault();
+				save();
+			}
+		},
+		false
+	);
 }
 
