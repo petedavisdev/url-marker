@@ -59,7 +59,7 @@ button:hover {
 	background-color: seagreen;
 }
 
-#settingsButton {
+#saveButton {
 	position: fixed;
 	top: 0.5ch;
 	right: 0.5ch;
@@ -87,3 +87,4 @@ aside {
 	color: silver;
 	border-top: solid 1px #444;
 }
+
