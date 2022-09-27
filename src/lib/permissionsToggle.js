@@ -1,14 +1,14 @@
-export function toggleSettings(hasPermission) {
+export function permissionsToggle(hasPermission) {
 	const permissionsForm = document.getElementById('permissionsForm');
-	const settingsForm = document.getElementById('settingsForm');
+	const editorForm = document.getElementById('editorForm');
 
 	if (hasPermission) {
 		permissionsForm.classList.add('hidden');
-		settingsForm.classList.remove('hidden');
+		editorForm.classList.remove('hidden');
 		return;
 	}
 
-	settingsForm.classList.add('hidden');
+	editorForm.classList.add('hidden');
 	permissionsForm.classList.remove('hidden');
 }
 

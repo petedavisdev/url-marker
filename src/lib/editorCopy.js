@@ -1,7 +1,7 @@
-export function copySettings(settingsEditor) {
+export function editorCopy(editor) {
 	function copy() {
 		try {
-			const settingsValue = settingsEditor.get();
+			const settingsValue = editor.get();
 			navigator.clipboard
 				.writeText(JSON.stringify(settingsValue))
 				.then(() => alert('📋 Copied to your clipboard, ready to share 🎁'));
@@ -13,3 +13,4 @@ export function copySettings(settingsEditor) {
 	const copyButton = document.getElementById('copyButton');
 	copyButton.addEventListener('click', () => copy(), false);
 }
+

@@ -1,7 +1,7 @@
-export function getMarkerSettings(settings) {
+export function markerSettingsGet(settings) {
 	const url = window.location.href;
 
-	const markerSettings = settings.urls.find((item) => {
+	const markerSettings = settings.markers.find((item) => {
 		let urlIsIncluded = false;
 		const settingIsArray = Array.isArray(item?.include);
 

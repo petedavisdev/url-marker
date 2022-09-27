@@ -1,15 +1,15 @@
-import { checkPermissions } from './lib/checkPermissions';
-import { copySettings } from './lib/copySettings';
-import { createSettingsEditor } from './lib/createSettingsEditor';
-import { requestPermissions } from './lib/requestPermissions';
-import { saveSettings } from './lib/saveSettings';
-import { toggleSettings } from './lib/toggleSettings';
-import { watchPermissions } from './lib/watchPermissions';
+import { editorCopy } from './lib/editorCopy';
+import { editorCreate } from './lib/editorCreate';
+import { editorSave } from './lib/editorSave';
+import { permissionsCheck } from './lib/permissionsCheck';
+import { permissionsRequest } from './lib/permissionsRequest';
+import { permissionsToggle } from './lib/permissionsToggle';
+import { permissionsWatch } from './lib/permissionsWatch';
 
-checkPermissions(toggleSettings);
-watchPermissions(toggleSettings);
-requestPermissions();
-const settingsEditor = createSettingsEditor();
-saveSettings(settingsEditor);
-copySettings(settingsEditor);
+permissionsCheck(permissionsToggle);
+permissionsWatch(permissionsToggle);
+permissionsRequest();
+const editor = editorCreate();
+editorSave(editor);
+editorCopy(editor);
 

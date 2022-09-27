@@ -1,5 +1,4 @@
-import { createMarker } from './lib/createMarker';
-import { useSettings } from './lib/useSettings';
+import { markerCreate } from './lib/markerCreate';
+import { settingsUse } from './lib/settingsUse';
 
-useSettings(createMarker);
-
+settingsUse(markerCreate);

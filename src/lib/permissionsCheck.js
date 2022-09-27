@@ -1,4 +1,4 @@
-export function checkPermissions(action) {
+export function permissionsCheck(action) {
 	chrome.permissions.contains(
 		{
 			origins: ['<all_urls>'],
@@ -6,3 +6,4 @@ export function checkPermissions(action) {
 		(result) => action(result)
 	);
 }
+

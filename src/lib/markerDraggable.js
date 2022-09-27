@@ -1,4 +1,4 @@
-export function makeElementDraggable(el) {
+export function markerDraggable(el) {
 	// Drag states
 	let dragging;
 	let mouseX;

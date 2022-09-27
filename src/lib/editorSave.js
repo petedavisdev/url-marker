@@ -1,8 +1,8 @@
-export function saveSettings(settingsEditor) {
+export function editorSave(editor) {
 	function save() {
 		console.log('saving');
 		try {
-			const settingsValue = settingsEditor.get();
+			const settingsValue = editor.get();
 			chrome.storage.sync.set({
 				settings: JSON.stringify(settingsValue),
 			});

@@ -1,4 +1,4 @@
-export function createMarkerElement(name, color, style) {
+export function markerElementCreate(name, color, style) {
 	const markerElement = document.createElement('div');
 
 	markerElement.id = 'urlMarker';

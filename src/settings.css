@@ -10,7 +10,7 @@ form {
 	margin: 0;
 }
 
-#settingsForm {
+#editorForm {
 	position: relative;
 	display: grid;
 	grid-template-columns: 400px 1fr;
@@ -21,12 +21,12 @@ form {
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 1em;
-	background-color: #222;
+	background-color: #111;
 	color: white;
 }
 
 .settingsInfo a {
-	color: dodgerblue;
+	color: deepskyblue;
 	text-decoration: none;
 }
 
@@ -47,7 +47,7 @@ button {
 	padding: 0.5em 2em;
 	font-size: large;
 	font-weight: bold;
-	background-color: forestgreen;
+	background-color: green;
 	color: white;
 	border: #000c solid 1px;
 	box-shadow: 0 0 0.5em 0 #000c;
@@ -56,11 +56,16 @@ button {
 }
 
 button:hover {
-	background-color: seagreen;
+	background-color: forestgreen;
 }
 
 #copyButton {
-	background-color: cadetblue;
+	background-color: dodgerblue;
+	padding-inline: 1em;
+}
+
+#copyButton:hover {
+	background-color: deepskyblue;
 }
 
 .buttons {
