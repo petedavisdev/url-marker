@@ -1,5 +1,6 @@
-import { editor } from './lib/editor';
-import { permissions } from './lib/permissions';
+import { editor } from './js/editor';
+import { permissions } from './js/permissions';
 
 permissions();
 editor();
+

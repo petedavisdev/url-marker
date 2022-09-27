@@ -1,5 +1,5 @@
-import { markerCreate } from './lib/markerCreate';
-import { settingsUse } from './lib/settingsUse';
+import { markerCreate } from './js/markerCreate';
+import { settingsUse } from './js/settingsUse';
 
 settingsUse(markerCreate);
 
