@@ -39,8 +39,11 @@ form {
 }
 
 pre {
+	font-size: 14px;
+	font-family: consolas, menlo, monaco, 'Ubuntu Mono', monospace;
 	color: lightgreen;
 	margin-right: 1ch;
+	font-weight: 400;
 }
 
 button {

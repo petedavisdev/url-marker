@@ -3,4 +3,3 @@ import { permissions } from './js/permissions';
 
 permissions();
 editor();
-
