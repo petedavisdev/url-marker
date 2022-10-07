@@ -1,6 +1,6 @@
 {
 	"name": "URL Marker",
-	"version": "0.1.2",
+	"version": "1.0.0",
 	"description": "Never mix up your local, test and live environment again! Markers show on pages and tabs. Share your settings with your team.",
 	"manifest_version": 3,
 	"icons": {
@@ -30,3 +30,4 @@
 	"options_page": "settings.html",
 	"permissions": ["storage"]
 }
+

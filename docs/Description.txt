@@ -1,7 +1,7 @@
-URL Marker is an essential extension for developers, testers and content editors working with multiple versions of a website.
+URL Marker is an essential extension for web developers, testers and content editors working with multiple environments.
 
 - Customisable markers shown at the top of the page
 - Drag and drop the marker if it gets in your way
 - The marker name also appears on the tab to help you multitask
-- Initial settings include common environment names
+- Comes with some common environment settings to get you started
 - Share your JSON settings with your team

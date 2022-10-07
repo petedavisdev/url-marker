@@ -14,7 +14,7 @@ export const settingsDefault = {
 		{
 			name: 'staging',
 			include: ['://staging.', '://stage.', '://stg.'],
-			color: '#00ffff',
+			color: '#00ccff',
 		},
 	],
 };
